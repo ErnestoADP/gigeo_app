@@ -1,0 +1,33 @@
+    .navbar {
+        width: 85%;
+        margin: auto;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        margin-bottom: 10px;
+        &__img {
+            width: 200px;
+        }
+        ul>li {
+            display: inline-block;
+            & i {
+                font-size: 30px;
+                padding: 30px 10px 20px 20px;
+            }
+        }
+    }
+    
+    // extra small
+    @media (max-width: 575px) {
+        ul>li.icon {
+            display: none;
+        }
+    }
+    
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) and (max-width: 900.98px) {
+        ul>li.icon {
+            display: none;
+        }
+    }
